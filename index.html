@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zegar</title>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/a452c10e-6702-4e0c-9e01-c91cee143b9c/Logo.png?v=1650000196970"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+                       initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+      class="tablink"
+      onclick="openPage('Clock', this, 'red')"
+      id="defaultOpen"
+    >
+      Clock
+    </button>
+    <button class="tablink" onclick="openPage('Links', this, 'blue')">
+      Links
+    </button>
+    <div id="Clock" class="tabcontent">
+      <div class="wall">
+        <div class="header">
+          <center>
+            <h1>QuBI</h1>
+          </center>
+        </div>
+        <div class="digital">
+          <iframe
+            src="https://free.timeanddate.com/clock/i8nrwc6o/n262/fn7/fs48/tct/pct/ahr/avt/th1"
+            frameborder="0"
+            width="218"
+            height="60"
+            allowtransparency="true"
+          ></iframe>
+        </div>
+        <div class="clock">
+          <div class="hand seconds"></div>
+          <div class="hand minutes"></div>
+          <div class="hand hours"></div>
+          <div class="hand hLED"></div>
+        </div>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+    </div>
+    <div id="Links" class="tabcontent">
+      <a
+        href="https://dash.cloudflare.com/e0233f319baf58c2007dbe5304f55e1a/qubirpi3b.tk"
+        target="_blank"
+        ><img
+          src="https://cdn.glitch.global/a452c10e-6702-4e0c-9e01-c91cee143b9c/cloudflare-logo.-mini.png?v=1659682988558"
+          alt="Cloudflare"
+      /></a>
+    </div>
+  </body>
+</html>
